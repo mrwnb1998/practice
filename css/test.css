@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(12, 10, 10);
+  background-image: url(../image/background1.jpeg);
+  background-size: auto;
+} 
+
+body,
+html {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  padding: 20px;
+  background-color: #fff;
+  height: 300px;
+  width: 300px;
+}
+
+.login h1 {
+  font-family: "微软雅黑";
+  font-size: 20px;
+  color: cornflowerblue;
+}
+
+.login .logo {
+  font-size: 20px;
+  color: #757575;
+  text-align: center;
+}
+
+.login input[id="username"],
+input[id="userpwd"] {
+  border: none;
+  border-bottom: 3px solid #41109c;
+  width: 100%;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  background-color: rgb(253, 253, 253);
+  transition: border-bottom-color .45s;
+}
+
+.login input[id="username"]:focus,input[id="userpwd"]:focus {
+  border-bottom-color: blanchedalmond;
+
+}
+
+.login input[id="submit"] {
+  border: 2px solid #fff;
+  height: 30px;
+  width: 100%;
+  background-color: aquamarine;
+  color: #fff;
+  transition: border .5s;
+  margin: 40px 0;
+}
+
+.login input[id="submit"]:hover {
+  border: 2px solid #11eeee;
+
+}
