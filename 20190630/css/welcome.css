@@ -1,0 +1,314 @@
+   * {
+     margin: 0;
+     padding: 0;
+     /*清除内外边距*/
+   }
+
+   ul {
+     list-style: none;
+     /*去掉列表的小点*/
+   }
+
+   .clearfix::before,
+   .clearfix::after
+
+   /*清除浮动*/
+     {
+     display: table;
+     content: "";
+   }
+
+   .clearfix::after {
+     clear: both;
+   }
+
+   .clearfix {
+     *zoom: 1;
+   }
+
+   header {
+     height: 129px;
+     width: 1228px;
+     margin-top: 100px;
+     margin-left: 200px;
+     background-color: #fff;
+     overflow: hidden;
+
+   }
+
+   nav {
+     width: 1040px;
+     height: 69px;
+     background-color: #fff;
+     margin: 1cm auto 0;
+     /*盒子水平居中对齐*/
+   }
+
+   body {
+     width: 1500px;
+     background-image: url(../image/background1.png);
+   }
+
+   .logo p {
+     font-size: 30;
+     position: relative;
+     float: right;
+     top: 10px;
+     left: -40px;
+     color: #c7c5c6;
+
+   }
+
+   .logo {
+     width: 268px;
+     background-color: #fff;
+     float: left;
+   }
+
+   .navbar {
+     float: right;
+     height: 60px;
+     line-height: 60px;
+     /*行高给父亲，行高会继承*/
+   }
+
+   .navbar li {
+     float: right;
+   }
+
+   .navbar li a {
+     color: #c0c0c0;
+     text-decoration: none;
+     padding: 0 30px;
+   }
+
+   .navbar li a:hover {
+     color: #88d5c2;
+   }
+
+   /*介绍部分*/
+   .Intro {
+     width: 1228px;
+     height: 174px;
+     line-height: 174px;
+     margin-left: 200px;
+     overflow: hidden;
+     background-image: url(../image/shdow.png);
+   }
+
+   .Intro p {
+     font-size: 25;
+     color: #797979;
+     padding: 0 110px;
+
+   }
+
+   /*portfolio部分*/
+   .Portfolio {
+     width: 1228px;
+     height: 110px;
+     line-height: 174px;
+
+     overflow: hidden;
+     background-color: #fff;
+
+   }
+
+   .Portfolio p[id="01"] {
+     float: left;
+     margin-left: 93px;
+     margin-top: -25px;
+     color: #88d5c2;
+     font-size: 20;
+
+   }
+
+   .background {
+     width: 1228px;
+     height: 771px;
+     margin-left: 200px;
+     background-image: url(../image/Background.png);
+
+
+   }
+
+
+   .Portfolio a {
+     float: right;
+     font-size: 12;
+     width: 134px;
+     height: 37px;
+     line-height: 37px;
+     text-decoration: none;
+     color: #131111;
+     background-image: url(../image/Shape28.png);
+     background-repeat: no-repeat;
+     position: relative;
+     top: 38px;
+     padding: 0 30px;
+     margin-right: 63px;
+   }
+
+   /*picture*/
+   .picture li {
+     float: right;
+     position: relative;
+     left: -95px;
+     margin: 0 3px;
+
+
+   }
+
+   /*From Joural*/
+   .From {
+     width: 1228px;
+     height: 436px;
+     margin-left: 200px;
+     background-image: url(../image/shape5.png);
+   }
+
+   .journal {
+     width: 1228px;
+     height: 114px;
+     line-height: 114px;
+
+     overflow: hidden;
+
+
+   }
+
+   .journal p[id="03"] {
+     float: left;
+     margin-left: 93px;
+     margin-top: 10px;
+     color: #88d5c2;
+     font-size: 20;
+
+   }
+
+   .pargraph {
+     margin-left: 200px;
+   }
+
+   .pargraph a {
+     margin-top: 15px;
+     margin-left: 20px;
+     color: #c1e7de;
+     font-size: 12;
+   }
+
+   .image {
+     float: left;
+     margin-left: -110px;
+   }
+
+   .pargraph-1 {
+     float: left;
+     margin-right: 90px;
+
+   }
+
+   .pargraph-2 {
+     float: right;
+
+   }
+
+   .pargraph-2 a {
+     margin-right: 50px;
+   }
+
+
+   .pargraph-3 {
+     float: left;
+
+
+   }
+
+   .pargraph-4 {
+     float: right;
+
+   }
+
+   .posthead {
+     margin-left: 20px;
+     color: #707070;
+     font-size: 14;
+   }
+
+   .postbody {
+     margin-top: 20px;
+     margin-left: 20px;
+     color: #999999;
+     font-size: 14;
+   }
+
+   #p04 {
+     margin-left: 65px;
+   }
+
+   #posthead2 {
+     margin-right: 150px;
+     color: #707070;
+     font-size: 14;
+   }
+
+   #postbody2 {
+     margin-right: 150px;
+     margin-top: 20px;
+     color: #999999;
+     font-size: 14;
+   }
+
+   #posthead4 {
+     margin-right: 90px;
+     color: #707070;
+     font-size: 14;
+   }
+
+   #postbody4 {
+     margin-right: 90px;
+     margin-top: 20px;
+     color: #999999;
+     font-size: 14;
+   }
+
+
+   /*face部分*/
+   .black {
+     width: 1228px;
+     height: 342px;
+     margin-left: 200px;
+     background-image: url(../image/shape52.png);
+
+   }
+
+   .footer {
+     margin-left: 100px;
+
+   }
+
+   .footer li {
+     float: left;
+     margin-left: 100px;
+     margin-top: 80px;
+     position: relative;
+     left: 20px;
+   }
+
+   .pro {
+     float: right;
+   }
+
+   .pro p {
+     color: #a8a7a7;
+     margin-left: 20px;
+   }
+
+   /*底部*/
+   .bottom {
+     width: 1228px;
+     height: 82px;
+     margin-left: 200px;
+     background-image: url(../image/shape5copy.png);
+
+   }

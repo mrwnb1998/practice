@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <meta charset="utf-8">
+   <script>
+    function baiji()
+    {
+      var x,y,z;
+      for(x=0;x<=20;x++){
+        for(y=0;y<=33;y++)
+        {
+          z=100-x-y;
+          if(z%3==0&5*x+3*y+z/3==100)
+          {
+            alert("鸡翁:"+x+"  鸡母："+y+"鸡雏"+z);
+          }
+        }
+      }
+    }
+
+   </script>
+</head>
+<body>
+  计算百鸡百钱问题：<br>
+  <input type="button" id="jisuan" onclick="baiji()" value="计算">
+
+</body>
+</html>
