@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    ul{ 
+      float: left;
+      list-style: none;
+      color: azure;
+    }
+    .wrap li ul{
+      position: absolute;
+      top: 30px;
+    }
+    .wrap>ul>li{
+      float:left;
+      margin-right: 10px;
+      position: relative;
+    }
+    li{
+      display: list-item;
+    
+    }
+    
+    a{
+     display: block;
+     height: 30px;
+     width: 100px;
+     text-decoration: none;
+      background-color: #4a4aff;
+      color: azure;
+      line-height: 30px;
+      text-align: center;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="wrap">
+    <ul>
+      <li>
+        <a href="#">第一级菜单栏</a>
+         <ul>
+      <li>第二级菜单栏1</li>
+      <li>第二级菜单栏2</li>
+      <li>第二级菜单栏3</li>
+    </ul>
+  </li>
+      <li>
+        <a href="#">第一级菜单栏</a>
+        <ul>
+          <li>第二级菜单栏1</li>
+          <li>第二级菜单栏2</li>
+          <li>第二级菜单栏3</li>
+        </ul>
+      </li>
+          <li>
+            <a href="javascript:void(0);">第一级菜单栏</a>
+            <ul>
+              <li>第二级菜单栏1</li>
+              <li>第二级菜单栏2</li>
+              <li>第二级菜单栏3</li>
+            </ul>
+          </li>
+  </ul>
+  </div>
+</body>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+  $('.wrap> ul > li').mouseover(function () {
+    $(this).children('ul').show();
+    console.log(11);
+    
+  });
+  $('.wrap> ul > li').mouseout(function () {
+    $(this).children('ul').hide();
+  });
+</script>
+</html>

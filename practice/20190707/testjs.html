@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <script>
+      var count=1;
+      var num=0;
+     //获取随机数
+      function getrand(min,max) {
+        count=1;
+        var range=max-min;
+        var rand=Math.random();
+      num=min+Math.round(rand*range);
+      alert(num);
+      }
+      //获取文本框的数字
+      function gettextnum() {
+        if(num==null)
+        {
+          alert("请先生成一个数");
+          return;
+        }
+        var getnum=document.getElementById("number").value;
+        if(getnum==""){
+          alert("请输入答案");
+          return;
+        }else if(getnum==num){
+          alert("恭喜你第"+count+"次就猜对了");
+          return;
+        }else {
+          alert("已猜次数"+count);
+          if(count==7)
+          {
+            if(getnum!=num)
+            {
+              alert("抱歉，你的七次机会已经用完了");
+              return;
+            }
+          }
+          if(getnum<num)
+          {
+            alert("数字小了，你还有"+(7-count)+"次机会");
+          }else{
+             alert("数字大了，你还有" + (7 - count) + "次机会");
+          }
+     count++;
+        }
+      }
+
+    </script>
+  </head>
+   <body>
+     <!--<form action="../js/test.js" method="post" >-->
+      请生成一个数：<input type="button" id="randnum" onclick="getrand(1,100)" value="生成随机数"><br>
+       数据：<input type="text" id="number"><br>
+       <input type="button" id="guess" onclick="gettextnum()" value="提交">
+    </body>
+</html>   
