@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1.map:映射
+        // let arr = [5, 12, 20];
+        // let result = arr.map(item => (item >= 15 ? '优秀' : (item > 10 ? '良好' : '不及格')));
+        // alert(result);
+
+        // 2.reduce:汇总
+        let arr = [15, 20, 25];
+        let result = arr.reduce(function (tmp, item, index) {
+            if (index != arr.length - 1) {
+                console.log(this);
+
+                return tmp + item;
+            } else
+                console.log(index);
+            return (tmp + item) / arr.length;
+
+
+        })
+        alert(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

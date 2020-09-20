@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 400px;
+            /* transform-style: preserve-3d; */
+        }
+
+        .box {
+            /* overflow: hidden; */
+            position: relative;
+            width: 200px;
+            height: 50px;
+            margin: 100px auto;
+            transition: all .4s;
+            transform-style: preserve-3d;
+            /* transform-origin: bottom; */
+        }
+
+        .box:hover {
+            transform: rotateX(90deg);
+
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* border-radius: 50%; */
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 50px;
+            /* transition: all 1s; */
+
+        }
+
+        .front {
+            background-color: pink;
+            z-index: 1;
+            transform: translateZ(25px);
+        }
+
+        .back {
+            background-color: purple;
+            transform: translateY(25px) rotateX(-90deg);
+
+            /* transform-origin: bottom; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="front">黑马程序员</div>
+        <div class="back">pink老师等你</div>
+    </div>
+</body>
+
+</html>

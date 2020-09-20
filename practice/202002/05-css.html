@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            /* border-top: 100px solid transparent;
+            border-right: 50px solid skyblue;
+            border-bottom: 0 solid blue;
+            border-left: 0 solid green; */
+
+            border-color: transparent red transparent transparent;
+            border-style: solid;
+            border-width: 100px 50px 0 0;
+        }
+
+        .price {
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        .miaosha {
+            position: relative;
+            /* display: inline-block; */
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+
+
+        }
+
+        .miaosha i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            border-width: 24px 10px 0 0;
+
+        }
+
+        .tran1 {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: purple;
+
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .tran2 {
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            /* transform: translate(-50%, -50%); */
+            margin-top: -50px;
+            margin-left: -50px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 过渡写到本身上，谁做动画给谁加 */
+            transition: all 1s;
+        }
+
+        .tran2:hover {
+            /* 转换中的移动和旋转不能同时使用 */
+            transform: rotate(360deg);
+        }
+
+        .tran3 {
+            width: 250px;
+            height: 30px;
+            border: 1px solid #000000;
+            position: relative;
+        }
+
+        /* 通过伪元素实现三角 */
+        .tran3::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 7px;
+            right: 15px;
+            border-right: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+            transform: rotate(45deg);
+        }
+
+        .tran4 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000000;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .tran4::after {
+            content: "黑马";
+            display: block;
+            /* before是行内元素 */
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            transform-origin: left bottom;
+            transform: rotate(180deg);
+            transition: all 0.3s;
+
+        }
+
+        .tran4:hover::after {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1"></div>
+    <div class="price">
+        <span class="miaosha">￥1650
+            <i></i>
+        </span>
+        <span>￥5650</span>
+    </div>
+
+    <div class="tran1">
+        <div class="tran2">
+            <img src="image/07.png" alt="">
+        </div>
+    </div>
+    <div class="tran3">
+
+    </div>
+    <div class="tran4">
+
+    </div>
+
+</body>
+
+</html>

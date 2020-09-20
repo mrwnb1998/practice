@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .active {
+        border: 1px solid red;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <img :src="imgsrc" alt="" :title="imgtitle">
+
+        <img v-bind:src="imgsrc" alt="" v-bind:title="imgtitle+'!!!'">
+
+        <img :src="imgsrc" alt="" :class="isactive?active:''" @click="taggclass">
+        <img :src="imgsrc" alt="" :class="{active:isactive}" @click="taggclass">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                imgsrc: 'image/07.png',
+                imgtitle: 'mrwnb',
+                isactive: false
+
+            },
+            methods: {
+                taggclass: function () {
+                    this.isactive = !this.isactive;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

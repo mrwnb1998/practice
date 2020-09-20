@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // json对象:属性名必须是双引号
+        var JSONObject = '{"name":"刘亦菲","skill":"电影"}';
+        //转换位对于的对象
+        var obj = JSON.parse(JSONObject);
+        console.log(obj.name);
+
+        // json数组
+        var jsonarr = '["花菜","西红柿","黄瓜"]';
+        // 转换为对应的数组
+        var arr = JSON.parse(jsonarr);
+        console.log(arr[0]);
+
+        //json对象里面包含数组
+        var JSONObjArr = '{"name":"吴俊杰","friends":["老刘","老余","东哥"]}';
+        console.log(JSONObjArr);
+
+        //转换格式
+        var result = JSON.parse(JSONObjArr);
+        console.log(result);
+        console.log(result.friends[0]);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" value="发送报文请求">
+    <h3></h3>
+    <script>
+        //点击事件
+        document.querySelector('input').onclick = function () {
+            // 1.创建对象
+
+            var xhr = new XMLHttpRequest();
+
+            // 2.设置请求行（get请求数据写在url后面）
+
+            xhr.open('get', 'http://jsonplaceholder.typicode.com/posts?id=' + 55);
+
+            // 3.设置请求头（这一步get请求可以省略，post不
+            // 发送数据也可以省略）
+
+            //  3.1。注册回调函数
+
+            xhr.onload = function () {
+                console.log(xhr.responseText);
+                document.querySelector('h3').innerHTML = xhr.responseText;
+
+            }
+
+            //  4.请求主体发送（get请求为空，或者写null
+            // ，post请求数据写在这里，
+            //  如果没有数据。直接为空或者写null）
+            xhr.send(null);
+
+        }
+    </script>
+
+</body>
+
+</html>

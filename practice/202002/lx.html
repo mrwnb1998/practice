@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>练习2</title>
+</head>
+
+<body>
+    <h1>练习二</h1>
+    <table align="center" border="2" cellpadding="20" cellspacing="0">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr rowspan="2">
+                <td>刘德华</td>
+                <td>58</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>刘德华</td>
+                <td>58</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>刘德华</td>
+                <td>58</td>
+                <td>男</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table align="center" border="2" cellpadding="20" cellspacing="0">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h4>青春不常在。抓紧谈恋爱</h4>
+    <table width="500" border="1" cellspacing="0">
+        <form>
+            <!-- 第一行 -->
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" checked="yes" name="sex" id="nan"> <label for="nan">男</label>
+                    <input type="radio" name="sex" id="nv"><label for="nv">女</label></td>
+
+            </tr>
+            <!-- 第二行 -->
+            <tr>
+                <td>生日:</td>
+                <td>
+                    <select name="year" id="year">
+                        <option value="">2001</option>
+                        <option value="">2002</option>
+                        <option value="">2003</option>
+                        <option value="">2004</option>
+                        <option value="">2005</option>
+                    </select>
+                    <select name="month" id="month">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                    </select>
+                    <select name="day" id="day">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+
+                </td>
+
+            </tr>
+            <!-- 第三行 -->
+            <tr>
+                <td>所在地区:</td>
+                <td><input type="text" value="成都"></td>
+
+            </tr>
+            <!-- 第四行 -->
+            <tr>
+                <td>婚姻状况：</td>
+                <td><input type="radio" checked="yes" name="MarryContion" id="WM"><label for="WM">未婚</label>
+                    <input type="radio" name="MarryContion" id="YM"><label for="YM">已婚</label>
+                    <input type="radio" name="MarryContion" id="LM"><label for="LM">离婚</label></td>
+            </tr>
+            <!-- 第五行 -->
+            <tr>
+                <td>学历:</td>
+                <td>
+                    <select name="maior" id="malor">
+                        <option value="">--请选择--</option>
+                        <option value="">小学</option>
+                        <option value="">中学</option>
+                        <option value="">大学</option>
+                        <option value="">博士</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- 第六行 -->
+            <tr>
+                <td>喜欢的类型：</td>
+                <td>
+                    <input type="checkbox" name="love" id="love1"><label for="love1">妩媚的</label>
+                    <input type="checkbox" name="love" id="love2"><label for="love2">可爱的</label>
+                    <input type="checkbox" name="love" id="love3"><label for="love3">御姐的</label>
+                    <input type="checkbox" name="love" id="love4"><label for="love4">都喜欢</label>
+                </td>
+            </tr>
+            <!-- 第七行 -->
+            <tr>
+                <td>个人介绍：</td>
+                <td><textarea>个人简介</textarea></td>
+            </tr>
+            <!-- 第八行 -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="免费注册">
+                </td>
+            </tr>
+            <!-- 第九行 -->
+            <tr>
+                <td></td>
+                <td><input type="checkbox" checked="checked">我同意注册条款</td>
+            </tr>
+            <!-- 第十行 -->
+            <tr>
+                <td></td>
+                <td><a href="">我是会员，立即登录</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <h5>我承诺</h5>
+                    <ul>
+                        <li>年满十八岁</li>
+                        <li>抱着严肃的态度</li>
+                        <li>真诚寻找另一半</li>
+                    </ul>
+                </td>
+
+            </tr>
+
+
+        </form>
+    </table>
+
+
+
+    <p>1.HTML页面开始三个标签的语义：
+        &lt;! doctype html&gt;: 是文件类型提示标签，时提示本文件是使用哪种标准写的，如html5
+        &lt;HTML lang="en"&gt;:表示的是该网站是英文网站，中文网站是zh-CN,
+        &lt;meta chartset="UTF-8"&gt;:这是必写的，UTF-8是万国符，是解决浏览器乱码的问题。
+
+        2.div标签和span标签：
+        div是块级元素，块级元素会以新行开始，即由上而下的排列，可以通过css的浮动来使其一行显示
+        span是内联元素，内联元素不会起新行。
+
+        3.图片标签&lt;img src="" alt=""&gt;
+        src属性是图片存放的路径，必填；
+        alt属性是替换文本，图片无法显示时的提示类容，
+        title属性是提示文本，当鼠标放到图片上时显示的文字。</p>
+</body>
+
+</html>

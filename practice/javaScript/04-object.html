@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // var dog = {
+        //     dname: '可可',
+        //     type: '阿拉斯加',
+        //     age: 5,
+        //     color: 'red',
+        //     skill: 'bark,showfilm'
+        // }
+        // console.log(dog.dname + dog.type + dog.skill);
+        // console.log(dog["dname"] + dog["skill"]);
+        //构造函数
+        function Star(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function sing(sang) {
+                console.log(sang);
+
+            }
+
+        }
+        var ldh = new Star('刘德华', 45, '男');
+        for (var k in ldh) {
+            console.log(ldh[k]);
+
+        }
+        ldh.sing('bingyu');
+        var zxy = new Star('张学友', 45, '男');
+        console.log(ldh);
+        console.log(zxy);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

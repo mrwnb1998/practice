@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div,
+    p {
+        width: 200px;
+        height: 50px;
+        background-color: pink;
+    }
+</style>
+
+<body>
+    <button>显示时间</button>
+    <div>
+        某个时间
+        <span>mrwnb</span>
+
+    </div>
+    <p>123</p>
+    <script>
+        function getDate() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var dates = date.getDate();
+            var day = date.getDay();
+            // var time = date.getTime();
+            var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+            return '今天是' + year + '年' + month + '月' + dates + '日' + arr[day];
+        }
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        btn.onclick = function () {
+            div.innerHTML = getDate();
+        }
+
+        var p = document.querySelector('p');
+        p.innerHTML = getDate();
+        console.log(p.innerText);
+        console.log(div.innerHTML);
+    </script>
+
+</body>
+
+</html>

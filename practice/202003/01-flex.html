@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            display: flex;
+            /* 默认的主轴是x轴，侧轴是y轴，自己设定。 */
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* 主轴居中 */
+            justify-content: center;
+            /* 侧轴居中 使用stretch拉伸时 不能给高度，单行，*/
+            /* align-items: center; */
+            /* align-content使用于多行 */
+            align-content: space-around;
+
+
+        }
+
+        div span {
+            width: 50px;
+            height: 80px;
+            margin: 0 5px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+    </div>
+
+</body>
+
+</html>

@@ -19,29 +19,30 @@
 </body>
 <script src="../jquery-3.4.1.min.js"></script>
   <script>
-    console.log($('div').text());//text()方法不给参数，就是获取目标文本。
-    $('#settext').click(function () {
-      $('#one').text('新设置的文本'); 
-      $('#one').css({
-      width:300,
-      'backgroundColor':'green',
-      border:'10px solid red'
+   // console.log($('div').text());//text()方法不给参数，就是获取目标文本。
+   // $('#settext').click(function () {
+   //   $('#one').text('新设置的文本'); 
+   //   $('#one').css({
+   //   width:300,
+   //   'backgroundColor':'green',
+   //   border:'10px solid red'
+//
 
-
-    });//给了参数就是设置新的内容覆盖之前的内容。
-    });
-    $('#settext').css('width','300px');
+   // });//给了参数就是设置新的内容覆盖之前的内容。
+   // });
+   // $('#settext').css('width','300px');
    
 
 
   
-    //$(document).ready(function () {
-    //  //$('div').width(100).height(100).css('background','red').text('哈哈')
-    //  alert('jquery tanchu');
-    //});
-    //window.onload=function () {
-    //  alert('window tanchu');
-    //}
+    $(function () {
+      $('div').width(100).height(100).css('background','red').text('哈哈')
+     alert('jquery tanchu');
+    });
+
+    window.onload=function () {
+      alert('window tanchu');
+    }
     //1.dom对象
     //var div1 = document.getElementById('one');
       //div1.style.backgroundColor = 'red';//dom对象是可以调用dom属性和方法的

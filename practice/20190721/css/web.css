@@ -162,7 +162,6 @@ background: #272727;
 .main{
   width: 1000px;
   height: 350px;
-  
   margin: 0 auto;
 
 }
@@ -264,14 +263,16 @@ margin: 0 10px;
   height: 200px;
   background-color: #e8e8e8;
   margin-top: 10px;
+  float: left;
 }
 .copy_content{
   width: 1000px;
   margin: 0 auto;
+  
 }
 .copy_content li{
   list-style: none;
-  float: left;
+ float: left;
   width: 250px;
   line-height: 30px;
   text-align: center;

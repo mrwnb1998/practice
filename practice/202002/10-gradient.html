@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #f1f1f1;
+    }
+
+    .container {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+
+    }
+
+    .btn {
+        border: none;
+        margin: 20px;
+        padding: 24px;
+        width: 220px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        cursor: pointer;
+        outline: none;
+        color: #f1f1f1;
+        background-size: 200%;
+        transition: 0.6s;
+
+    }
+
+    .btn:hover {
+        background-position: right;
+    }
+
+
+    .btn1 {
+        background-image: linear-gradient(to left, #ffc312, #ee5A24, #ffc312);
+    }
+
+    .btn2 {
+        background-image: linear-gradient(to left, #70a1ff, #009432, #0652DD);
+    }
+
+    .btn3 {
+        background-image: linear-gradient(to left, #1289A7, #A3CB38, #1289A7);
+    }
+
+    .btn4 {
+        background-image: linear-gradient(to left, #FDA7DF, #ee5A24, #FDA7DF);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <button class="btn btn1">hover me</button>
+        <button class="btn btn2">hover me</button>
+        <button class="btn btn3">hover me</button>
+        <button class="btn btn4">hover me</button>
+    </div>
+</body>
+
+</html>

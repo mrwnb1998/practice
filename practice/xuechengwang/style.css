@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 确认版心大小 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f3f5f7;
+
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 头部区域开始 */
+.header {
+    height: 42px;
+    background-color: #f3f5f7;
+    /* 注意此地方会层叠W里面的margin，所以左右写auto,而不是0； */
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 230px;
+    height: 40px;
+
+}
+
+.nav {
+    float: left;
+    width: 330px;
+    height: 42px;
+    margin-right: 40px;
+
+
+}
+
+.serach {
+    float: left;
+    width: 413px;
+    height: 42px;
+
+}
+
+.user {
+    float: left;
+    /* width: 180px; */
+    height: 40px;
+
+}
+
+.nav li {
+    display: inline-block;
+
+    margin: 0 15px;
+
+}
+
+.nav li a {
+    display: inline-block;
+    height: 42px;
+    padding: 0 10px;
+    text-decoration: none;
+    font: 18px "Microsoft yahei";
+    color: #050505;
+    line-height: 42px;
+}
+
+
+
+.nav li a:visited {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.nav li a:active {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.serach input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+
+}
+
+.serach button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: 0;
+    background-image: url(image/fa-search.png);
+
+}
+
+
+.user img {
+    float: left;
+    line-height: 40px;
+    padding-left: 20px;
+    /* padding-top: 5px; */
+    vertical-align: middle;
+
+}
+
+
+/* 头部区域结束 */
+
+
+
+/* banner区域开始 */
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.pro {
+    height: 420px;
+    background-color: pink;
+    background: url(image/banner2.png) no-repeat top center;
+}
+
+.subnav {
+    float: left;
+    width: 191px;
+    height: 420px;
+    background: rgba(0, 0, 0, .3);
+
+}
+
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    color: #ffffff;
+    font-size: 14px;
+    /* font: 14px "Microsoft YaHei"; */
+}
+
+.subnav ul li a span {
+    float: right;
+
+}
+
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+.cource {
+    margin-top: 50px;
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.cource h2 {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #9bceea;
+}
+
+.bd {
+    padding: 0 20px;
+}
+
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.bd ul li h5 {
+    font-size: 16px;
+    color: #4e4e4e;
+
+}
+
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 5px;
+
+}
+
+/* 精品区域开始 */
+.goods {
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+    margin-top: 10px;
+}
+
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #bfbfbf;
+}
+
+.goods ul li a:hover {
+    border-left: 2px solid #bfbfbf;
+    color: #00a4ff;
+
+}
+
+
+.goods .hobby {
+    float: right;
+    margin-right: 28px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+
+/* 精品区域结束 */
+
+/* 精品推荐区域开始 */
+.good-intro {
+    height: 610px;
+    margin-top: 30px;
+
+}
+
+.good-intro .head {
+    height: 45px;
+}
+
+.good-intro .head h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.good-intro .head a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+
+.good-intro .good-bd ul {
+    width: 1225px;
+}
+
+.good-intro .good-bd ul li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.good-intro .good-bd ul li>img {
+    width: 100%;
+}
+
+.good-intro .good-bd ul li em {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
+.good-intro .good-bd ul li h4 {
+    font-size: 14px;
+    color: #050505;
+    margin-left: 24px;
+    margin-top: 20px;
+}
+
+.good-intro .good-bd .info {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-top: 20px;
+
+}
+
+.good-intro .good-bd .info span {
+    color: #ff7c2d;
+}
+
+
+/* 精品推荐区域结束 */
+
+/* 5.编程入门区域开始 */
+.good-intro2 {
+    height: 438px;
+    margin-top: 30px;
+
+}
+
+.good-intro2 .head {
+    height: 45px;
+}
+
+.good-intro2 .head h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.good-intro2 .list ul {
+    margin-left: 400px;
+}
+
+.good-intro2 .list ul li a {
+    float: left;
+    margin-right: 70px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #868686;
+
+
+}
+
+.good-intro2 .head a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.good-intro2 .good-intro2-bd .bd-left {
+    float: left;
+}
+
+.good-intro2 .good-intro2-bd .bd-right {
+    float: left;
+}
+
+.bd-right img {
+    margin-left: 15px;
+}
+
+.bd-right .bd-right-box ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+
+.bd-right-box ul li img {
+    margin-left: 0;
+    width: 100%;
+}
+
+.bd-right-box ul li h4 {
+    font-size: 14px;
+    color: #050505;
+    margin-left: 24px;
+    margin-top: 20px;
+}
+
+.bd-right-box .info {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-top: 20px;
+
+}
+
+.bd-right-box .info span {
+    color: #ff7c2d;
+}
+
+/* 5.编程入门区域结束 */
+
+.footer {
+    height: 415px;
+    background-color: #fff;
+}
+
+.footer .w {
+    padding-top: 30px;
+}
+
+.footer .copyright {
+    float: left;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 30px;
+}
+
+.copyright button {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    font-size: 16px;
+    color: #00a4ff;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.link {
+    float: right;
+}
+
+.link dl {
+    float: right;
+    margin-left: 90px
+}

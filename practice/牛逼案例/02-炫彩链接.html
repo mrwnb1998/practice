@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: #031321;
+            font-family: consolas;
+        }
+
+        a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 15px 30px;
+            /* width: 200px;
+            height: 60px; */
+            color: #fff;
+            background: linear-gradient(90deg, #1e90ff, #eccc68, hsl(345, 67%, 51%), #1e90ff);
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            background-size: 400%;
+
+        }
+
+        a:hover {
+
+            animation: animate 8s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 400%;
+            }
+        }
+
+        a:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: linear-gradient(90deg, #1e90ff, #eccc68, hsl(345, 67%, 51%), #1e90ff);
+            background-size: 400%;
+            border-radius: 20px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        a:hover:before {
+            filter: blur(20px);
+            opacity: 1;
+            animation: animate 8s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="">new button</a>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.super父类的构造方法：子类构造函数中用super关键字会将数据
+        // 传给父类的构造函数，这样子类就可以用父类的方法了，但super要放在子类this的前面
+        //即先调用父类的构造函数。
+        class Father {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+            money() {
+                console.log(100);
+            }
+            calute() {
+                return this.x + this.y;
+            }
+        }
+        class Son extends Father {
+            constructor(x, y) {
+                super(x, y);
+                this.x = x;
+                this.y = y;
+            }
+            sub() {
+                console.log(this.x - this.y);
+            }
+        }
+        var son = new Son(15, 10);
+        son.money();
+        console.log(son.calute());
+        son.sub();
+
+
+        // 2.继承中，如果实例化子类输出一个方法，先看子类有没有这个方法，如果有就执行
+        //子类的方法，如果没有，就看看父类钟有没有这个方法啊，有就执行父类的
+        // class Father {
+        //     constructor() {
+
+        //     }
+        //     say() {
+        //         console.log('woshiFather');
+
+        //     }
+        // }
+        // class Son extends Father {
+        //     say() {
+        //         console.log(super.say() + 'deSon');
+
+        //     }
+        // }
+        // var son = new Son();
+        // son.say();
+    </script>
+</body>
+
+</html>

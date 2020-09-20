@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div v-cloak>{{massage}}</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new vue({
+            el: '#app',
+            data: {
+                massage: 'hollow'
+            }
+        });
+    </script>
+    <!-- v-cloak指令的用法 -->
+    <!-- 1.提供样式
+            [v-cloak]{
+                display:none;
+            }
+            2.在插值表达式所在的标签添加v-cloak指令 -->
+
+</body>
+
+</html>

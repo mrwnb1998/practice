@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //for循环 
+        //99乘法表
+        // var str = '';
+        // for (var i = 1; i <= 9; i++) {
+        //     for (var j = 1; j <= i; j++) {
+        //         str += j + 'x' + i + '=' + i * j + ' ';
+        //     }
+        //     str += '\n';
+        // }
+        // console.log(str);
+
+        //while循环：先判断条件，在执行循环体。
+        // var massage = prompt('你爱我吗?');
+        // while (massage !== '我爱你') {
+        //     massage = prompt('你爱我吗?');
+        // }
+        // alert('我也爱你');
+
+        //do while循环：先执行循环体，在判断循环条件
+        // var i = 1;
+        // var sum = 0;
+        // do {
+        //     sum += i;
+        //     i++;
+        // } while (i <= 100);
+        // console.log(sum);
+
+        //求1-100之间，除了能被7整除之外的整数和
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 7 == 0) {
+        //         continue;
+        //     }
+        //     sum += i;
+        // }
+        // console.log(sum);
+
+        //简易银行:1.存钱 2.取钱 3查询 4退出
+        var x = 0;
+        var y = 0;
+        var z = 0;
+        var m = 0;
+        do {
+            var i = prompt('请输入操作指令：\n 1:存钱  2.取钱  3.查询  4.退出');
+            if (i == 1) {
+                x = parseInt(prompt('请输入要存入的数目：'));
+                m += x;
+                alert('当前余额为' + m + '元');
+
+            } else if (i == 2) {
+                y = prompt('请输入要取的数目：');
+                z = m - y;
+                m = z;
+                if (z >= 0)
+                    alert('您取了' + y + '元，账户余额为' + m + '元');
+                else
+                    alert('余额不足');
+
+            } else if (i == 3) {
+                alert('当前账户余额为' + m + '元');
+            } else if (i == 4) {
+                break;
+            } else {
+                alert('请输入正确的指令');
+            }
+
+        } while (i !== 4);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

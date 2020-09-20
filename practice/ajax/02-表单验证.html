@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2></h2>
+    <input type="text" placeholder="请输入">
+    <h3></h3>
+    <script>
+        document.querySelector('input').onblur = function () {
+            // 1.创建异步对象
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('get', 'checkname.php?name=' + this.value);
+            document.querySelector('h2').innerHTML = '验证中';
+
+            xhr.onload = function () {
+                console.log(xhr.responseText);
+                document.querySelector('h3').innerHTML = xhr.responseText;
+                document.querySelector('h2').innerHTML = '验证完毕'
+
+            }
+            // xhr.setRequestHeader();
+            xhr.send(null);
+        }
+    </script>
+
+</body>
+
+</html>

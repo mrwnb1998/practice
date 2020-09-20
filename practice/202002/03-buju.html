@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .top {
+            height: 100px;
+            background-color: gray;
+        }
+
+        .banner {
+            height: 200px;
+            width: 960px;
+            background-color: gray;
+            margin: 10px auto;
+        }
+
+        .box {
+            width: 960px;
+            margin: 0 auto;
+            background-color: pink;
+            overflow: hidden;
+            /*清除父级元素的浮动，在不给高度的情况下，避免父级元素塌陷 */
+
+
+        }
+
+        .footer {
+            height: 100px;
+            background-color: gray;
+            margin-top: 10px;
+        }
+
+        .box li {
+            width: 231px;
+            height: 250px;
+            background-color: gray;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .box .last {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">top</div>
+    <div class="banner">baner</div>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="last">4</li>
+        </ul>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>

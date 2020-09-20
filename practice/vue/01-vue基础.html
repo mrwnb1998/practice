@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue基础</title>
+</head>
+
+<body>
+    <div id="app">
+        {{massage}}
+        <p>{{star.name}} {{star.sex}} {{star.sing()}}</p>
+        <ul>
+            <li>{{campus}}</li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            //el挂载点：1.vue会管理el选项命中的元素及其内部的后代元素
+            //2.可以使用其他选择器，单推荐使用ID选择器。
+            el: '#app',
+
+            //data:
+            data: {
+                massage: '黑马程序员',
+                star: {
+                    name: '柳大华',
+                    sex: '男',
+                    sing() {
+                        console.log('并与');
+
+                    }
+                },
+                campus: ['冰雨', '爱你一万年', '恭喜发财']
+            }
+        })
+    </script>
+</body>
+
+</html>

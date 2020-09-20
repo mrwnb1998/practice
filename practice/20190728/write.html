@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>打字测试</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overflow: hidden;
+        height: 100%;
+      }
+
+      ::-webkit-scrollbar {
+        width: 0;
+      }
+
+      .fontTextarea,
+      .btnGroup,
+      .costTime {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        position: relative;
+      }
+
+      .fontTextarea {
+        outline: none;
+        resize: none;
+        overflow-y: auto;
+        height: 200px;
+        border: 1px solid #bebebe;
+        border-radius: 4px;
+      }
+
+      textarea:disabled {
+        background-color: #f3f4f5;
+        color: #535353;
+      }
+
+      .fontString {
+        padding: 20px;
+      }
+
+      .fontTextarea:focus {
+        box-shadow: 0 0 10px rgba(204, 243, 239, 0.73);
+      }
+
+      .btnGroup>button {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid transparent;
+        padding: 4px 12px;
+        font: 16px "幼圆";
+        color: #141313;
+        outline: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      .btnGroup>button:last-child {
+        margin-left: 15px;
+      }
+
+      .btnGroup>button:hover,
+      .btnGroup>button:active {
+        border-color: #a3ecec;
+      }
+
+      .costTime {
+        margin-top: 10px;
+      }
+
+      .costTime::after {
+        content: " ";
+        display: block;
+        visibility: hidden;
+        height: 0;
+        clear: both;
+      }
+
+      .costTime p {
+        width: 33.33%;
+        font-size: 16px;
+        float: left;
+      }
+
+      .costTime p span {
+        color: #ff3119;
+        padding: 0 2px;
+      }
+
+      .errorfont {
+        color: #cf2c1a;
+      }
+
+      .rightfont {
+        color: #29bbff;
+      }
+
+      @media screen and (max-width:750px) {
+        .costTime p {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <p class="fontString">
+      网上打字测试，点开始之后可以开始打字，按下第一个键之后开始计时，打字结束之后可以按计算速度计算你刚才打字的速度，下方同时显示错误的字数、经过的时间。打错的字是红色显示，正确的是蓝色字，还没有打的是黑色。</p>
+
+    <textarea class="fontTextarea"></textarea>
+
+    <div class="btnGroup">
+      <button type="button" class="beginBtn" onclick="dz()">(重新)开始打字</button>
+      <button type="button" class="finishBtn">结束打字</button>
+    </div>
+
+    <div class="costTime">
+      <p>所花时间:<span class="time">0</span>秒</p>
+      <p>错误数量:<span class="error">0</span>个</p>
+      <p>打字速度:<span class="speed">0</span>个/分</p>
+    </div>
+</body>
+</html>

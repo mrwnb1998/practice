@@ -1,0 +1,415 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+
+
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+
+}
+
+
+.prev,
+.right {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .3);
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.right {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+}
+
+.pro-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -25px;
+    width: 70px;
+    height: 13px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 7px;
+}
+
+
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+
+
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    margin-bottom: 6px;
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+    color: #333333;
+
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-bd ul li {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 7px;
+    padding-left: 10px;
+
+}
+
+.news-bd ul li p {
+    float: left;
+    font-size: 12px;
+    padding-right: 6px;
+    font-weight: 700;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+}
+
+.lifeservice .life01 {
+    background: url(../image/icons.png) no-repeat -19px -15px;
+}
+
+.lifeservice .life02 {
+    background: url(../image/icons.png) no-repeat -79px -15px;
+}
+
+.lifeservice .life03 {
+    background: url(../image/icons.png) no-repeat -142px -15px;
+}
+
+.lifeservice .life04 {
+    background: url(../image/icons.png) no-repeat -206px -15px;
+}
+
+.lifeservice .life05 {
+    background: url(../image/icons.png) no-repeat -17px -87px;
+}
+
+.lifeservice .life06 {
+    background: url(../image/icons.png) no-repeat -79px -87px;
+}
+
+.lifeservice .life07 {
+    background: url(../image/icons.png) no-repeat -142px -87px;
+}
+
+.lifeservice .life08 {
+    background: url(../image/icons.png) no-repeat -206px -87px;
+}
+
+.lifeservice .life09 {
+    background: url(../image/icons.png) no-repeat -17px -159px;
+}
+
+.lifeservice .life10 {
+    background: url(../image/icons.png) no-repeat -79px -159px;
+}
+
+.lifeservice .life11 {
+    background: url(../image/icons.png) no-repeat -142px -159px;
+}
+
+.lifeservice .life12 {
+    background: url(../image/icons.png) no-repeat -206px -159px;
+}
+
+/* 推荐模块开始 */
+.recom {
+    height: 163px;
+    margin-top: 12px;
+    background-color: #ebebeb;
+}
+
+.recom-hd {
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+}
+
+.recom-bd {
+    float: left;
+}
+
+
+
+.recom-bd ul li {
+    position: relative;
+    float: left;
+}
+
+/*nth-child(-n+3):是从第三个孩子往前面数三个*/
+.recom-bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #dddddd;
+}
+
+.like {
+    height: 273px;
+    margin-top: 18px;
+
+}
+
+.like-hd {
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+}
+
+.like-hd p {
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    color: #333333;
+
+}
+
+.like-hd-right {
+    float: right;
+    margin-right: 20px;
+}
+
+.like-hd-right a {
+    font-size: 12px;
+    color: #666666;
+}
+
+.like-hd-right button {
+    width: 15px;
+    height: 15px;
+    border: 0;
+    margin-left: 9px;
+    background: url(../image/icons.png) no-repeat -421px -110px;
+}
+
+.like-bd {
+    overflow: hidden;
+    height: 232px;
+    border: 1px solid #ededed;
+}
+
+.like-bd ul li {
+    float: left;
+    border: 0;
+    position: relative;
+    width: 200px;
+    height: 232px;
+
+}
+
+.like-bd ul {
+    width: 1208px;
+}
+
+.like-bd ul li:nth-child(-n+5)::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 1px;
+    height: 60px;
+    background-color: #ededed;
+
+}
+
+.like-bd ul li img {
+    width: 160px;
+    height: 141px;
+    padding-left: 23px;
+}
+
+.like-bd ul li p {
+    font-size: 12px;
+    color: #666666;
+    padding-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.like-bd ul li a {
+    font-size: 18px;
+    color: #df3033;
+    padding-left: 35px;
+
+}
+
+
+
+
+
+
+/* 推荐模块结束 */
+/* 家用电器模块开始 */
+.floor .w {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+.tab_list ul li {
+    float: left;
+    font-size: 12px;
+    color: #666666;
+
+}
+
+.box-bd {
+    height: 361px;
+
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+
+}
+
+.col_329 {
+    position: relative;
+    width: 329px;
+}
+
+.col_329 .pro-nav-col {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -25px;
+    width: 43px;
+    height: 13px;
+    /* background: rgba(255, 255, 255, .3); */
+    border-radius: 7px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #cccccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    display: block;
+    border-bottom: 1px solid #cccccc;
+}
+
+/* 家用电器模块结束 */

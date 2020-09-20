@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h2 v-text="massage+'!'">圣战</h2>
+        <h2 v-text="info+'!'">圣战</h2>
+        <h2>{{massage+'!'}}圣战</h2>
+
+        <!--设置元素的innerText -->
+        <p v-text='content'></p>
+        <!--设置元素的innerHtml -->
+        <p v-html='content'></p>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                massage: '黑马程序员',
+                info: '前端vue',
+                content: "<a href='http://www.baidu.com'>百度<\a>",
+
+            }
+        })
+    </script>
+
+</body>
+
+</html>

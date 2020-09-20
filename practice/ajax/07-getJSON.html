@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="请求JSon数据">
+
+    <script>
+        //点击时候获取
+        document.querySelector('input').onclick = function () {
+
+            //  1.创建异步对象
+            var xhr = new XMLHttpRequest();
+            // 2.设置请求行
+            xhr.open('post', 'http://jsonplaceholder.typicode.com/posts');
+            //3.设置请求头，post不传数据也可以省略
+            xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+            // 4.注册状态改变事件
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    console.log(xhr.responseText);
+                }
+            }
+            //5.发现请求
+            xhr.send('id=' + 55);
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

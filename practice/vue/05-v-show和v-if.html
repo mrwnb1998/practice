@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1.v-show:如果是true就显示，如果是false就设置元素的display：none来隐藏 -->
+    <div id='app'>
+        <img src="image/07.png" alt="" v-show='isshow'>
+        <img src="image/07.png" alt="" v-show='age>=18'>
+        <input type="button" value="年龄添加" @click='addage'>
+
+        <!-- 2.v-if指令的作用是：根据表达式的真假切换你元素的显示状态，本质是
+        通过操作dom的移除和添加来切换显示状态 
+        表达式的值为true，元素存在于dom树中，false则从dom树中移除-->
+        <p v-if='temp>=37'>热死了</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                isshow: false,
+                temp: 36,
+                age: 17
+            },
+            methods: {
+                addage: function () {
+                    this.age++;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

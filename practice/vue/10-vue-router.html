@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="button" value="get请求" @click='getRequest'>
+        <router-link to='/login'>登录</router-link>
+        <router-link to='/regist'>注册</router-link>
+        <h3></h3>
+        <router-view></router-view>
+    </div>
+    <script>
+        // 1.定义组件
+        let login = {
+            template: '<h3>欢迎登录</h3>'
+        }
+        let regist = {
+            template: '<h3>欢迎注册</h3>'
+        }
+        // 2.定义路由
+        const routes = [{
+                path: '/login',
+                component: login
+            },
+            {
+                path: '/regist',
+                component: regist
+            }
+        ]
+        // 3.创建router实例
+        const router = new VueRouter({
+            routes: routes
+        })
+
+        var vm = new Vue({
+            el: '#app',
+            data: {
+
+            },
+            methods: {
+                getRequest: function () {
+                    // 1.创建对象
+
+                    var xhr = new XMLHttpRequest();
+
+                    // 2.设置请求行（get请求数据写在url后面）
+
+                    xhr.open('get', 'http://jsonplaceholder.typicode.com/posts?id=' + 55);
+
+                    // 3.设置请求头（这一步get请求可以省略，post不
+                    // 发送数据也可以省略）
+
+                    //  3.1。注册回调函数
+
+                    xhr.onload = function () {
+                        console.log(xhr.responseText);
+                        var getmass = JSON.parse(xhr.responseText);
+                        console.log(getmass[0].title + getmass[0].id);
+
+                        document.querySelector('h3').innerHTML = getmass[0].title;
+
+                    }
+
+                    //  4.请求主体发送（get请求为空，或者写null
+                    // ，post请求数据写在这里，
+                    //  如果没有数据。直接为空或者写null）
+                    xhr.send(null);
+                }
+
+            },
+            router: router
+
+        })
+    </script>
+
+</body>
+
+</html>
