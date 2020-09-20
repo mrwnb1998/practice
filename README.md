@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # The Personal learning demo
 
 ## 备注
@@ -18,3 +19,7 @@
     - demo1
     - demo2
     - xxxx
+=======
+# practice
+priactice
+>>>>>>> 347aa9a040c37bcce2815c65cb6ccc5deddefcdf
